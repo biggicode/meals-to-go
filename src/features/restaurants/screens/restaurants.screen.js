@@ -10,13 +10,13 @@ const StyledSafeAreaView = styled(SafeAreaView)`
 `;
 
 const SearchbarWrapper = styled.View`
-  padding: 16px;
+  padding: ${(props) => props.theme.space[3]};
 `;
 
 const RestaurantInfoCardWrapper = styled.View`
-  background-color: blue;
+  background-color: ${(props) => props.theme.colors.bg.primary};
   flex-grow: 1;
-  padding: 16px;
+  padding: ${(props) => props.theme.space[3]};
 `;
 
 export const RestaurantsScreen = () => {
